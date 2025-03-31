@@ -51,7 +51,7 @@ int main()
         printWinner(winner);
 
         printf("\nWould you like to play again? (Y/N): ");
-        scanf("%c");
+        scanf("%c");  //to remove any character in buffer memory
         scanf("%c", &response);
         response = toupper(response);
     } while (response == 'Y');
